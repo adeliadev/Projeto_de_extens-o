@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.item-navbar{
+    text-decoration: none;
+    padding: 0 50px;
+    color: #666872;
+}
+
+.logo{
+    margin: 20px 120px;
+}
+
+.botoes-catalogo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 42px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    border: 1px solid #0B7247;
+    padding: 10px;
+    gap: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffffff; 
+}
+
+.ativo {
+    background-color: #0B7247;
+}
+
+.ordenar{
+    color: #0B7247;
+}
+
+.botao-ordenar button::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+    background: url("../assets/img/seta-baixo-verde.svg") no-repeat;
+    transition: 0.3s;
+}
+
+
+.botao-categoria button::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+    background: url("../assets/img/seta-baixo.svg") no-repeat;
+    transition: 0.3s;
+}
+
+/* CARDS DAS MOTOS */
+
+.container-catalogo{
+    margin-top: 50px;
+    height: 680px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+
+.card-moto{
+    width: 180px;
+}
+
+.ano-moto{
+    font-size: 13px;
+}
+
+.preco-catalogo{
+    color: #0B7247;
+}
+
+.preco-anterior{
+    color: #666872;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.botao-detalhes{
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    border: 2px solid #0B7247;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.botao-detalhes a{
+    text-decoration: none;
+    color: #0B7247;
+}
