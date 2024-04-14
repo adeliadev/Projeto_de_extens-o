@@ -1,0 +1,210 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para os links */
+a {
+    text-decoration: none;
+    color: #0B7247; /* Cor dos links */
+}
+
+/* Estilos para a barra de navegação */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para os links na barra de navegação à esquerda */
+.links-left {
+    display: flex;
+    align-items: center;
+}
+
+.links-left a {
+    margin-right: 20px;
+}
+
+/* Estilos para a logo */
+.logo {
+    text-align: center;
+}
+
+/* Estilos para a imagem da logo */
+.logo img {
+    max-width: 200px;
+}
+
+/* Estilos para a barra de navegação à direita */
+.links-right {
+    display: flex;
+    align-items: center;
+}
+
+.links-right a {
+    margin-left: 20px;
+}
+
+/* Estilos para a barra lateral esquerda */
+.leftsidebar {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    color: #0B7247; /* Cor do texto na barra lateral esquerda */
+    border: 1px solid #AAAAAA; /* Adiciona borda de 1px sólida com a cor #AAAAAA */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.leftsidebar h3, .leftsidebar p {
+    font-size: 16px; /* Defina o tamanho de fonte desejado */
+}
+
+/* Estilos para o formulário de contato */
+.container {
+    float: left;
+    width: 50%;
+    height: 487px; /* Altura da borda */
+    padding: 20px;
+    border: 1px solid #AAAAAA; /* Adiciona borda de 1px sólida com a cor #AAAAAA */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: auto; /* Centraliza horizontalmente */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    color: #0B7247; /* Cor do título do formulário */
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0B7247; /* Cor do texto das etiquetas do formulário */
+}
+
+label[for="email"] {
+    font-size: 30px; /* Tamanho da fonte para o label do input de email */
+}
+
+.container input[type="email"],
+.container input[type="text"] {
+    width: 305px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.container textarea {
+    width: 305px;
+    height: 119px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.container button {
+    display: block; /* Transforma o botão em bloco */
+    width: 160px; /* Define a largura do botão */
+    height: 40px; /* Define a altura do botão */
+    margin: 10px auto 0; /* Centraliza o botão e adiciona margem superior */
+    padding: 10px 20px;
+    background-color: #0B7247; /* Cor de fundo do botão */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas */
+    vertical-align: middle; /* Alinha verticalmente com o input de Assunto */
+}
+
+/* Estilos para a barra lateral direita */
+.rightsidebar {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    color: #0B7247; /* Cor do texto na barra lateral direita */
+    border: 1px solid #AAAAAA; /* Adiciona borda de 1px sólida com a cor #AAAAAA */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.rightsidebar h2 {
+    margin-bottom: 20px;
+    color: #0B7247; /* Cor do título na barra lateral direita */
+}
+
+.rightsidebar button {
+    padding: 10px 20px;
+    background-color: #0B7247; /* Cor de fundo do botão */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.backgroundrodape {
+    background-color: #ADCB56; /* Cor de fundo */
+}
+
+/* Estilos para os ícones sociais */
+.social-icons {
+    position: fixed; /* Torna o bloco fixo */
+    bottom: 50px; /* O posiciona acima dos links adicionais */
+    left: 50%; /* O posiciona no centro horizontal */
+    transform: translateX(-50%); /* Corrige o alinhamento horizontal */
+    background-color: #ADCB56; /* Cor de fundo */
+    padding: 10px; /* Adiciona um espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Alinha os ícones horizontalmente */
+    width: 100%;
+}
+
+.social-icons a {
+    display: inline-block; /* Permite que os ícones fiquem em linha */
+    margin: 0 10px; /* Adiciona espaçamento entre os ícones */
+}
+
+/* Define a largura das imagens como 100% */
+.social-icons img {
+    width: 30px;
+    height: 30px; /* Define a altura dos ícones */
+}
+
+/* Estilos para os links adicionais */
+.additional-links {
+    position: fixed; /* Torna o bloco fixo */
+    bottom: 20px; /* O posiciona na parte inferior */
+    left: 50%; /* O posiciona no centro horizontal */
+    transform: translateX(-50%); /* Corrige o alinhamento horizontal */
+    background-color: #ADCB56; /* Cor de fundo */
+    padding: 10px; /* Adiciona um espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Alinha os links horizontalmente */
+    width: 100%;
+}
+
+.additional-links a {
+    display: inline-block; /* Permite que os links fiquem em linha */
+    margin: 0 10px; /* Adiciona espaçamento entre os links */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+/* Estilos para o texto no rodapé */
+.copyright {
+    position: fixed; /* Torna o bloco fixo */
+    bottom: 5px; /* O posiciona na parte mais inferior */
+    left: 50%; /* O posiciona no centro horizontal */
+    transform: translateX(-50%); /* Corrige o alinhamento horizontal */
+    color: #fff; /* Cor do texto */
+    background-color: #ADCB56; /* Cor de fundo */
+    width: 100%;
+    text-align: center; /* Alinha os links horizontalmente */
+}
+
+
