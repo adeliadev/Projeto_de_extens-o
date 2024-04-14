@@ -54,7 +54,7 @@
     width: 12px;
     height: 12px;
     margin-left: 3px;
-    background: url("../assets/img/seta-baixo-verde.svg") no-repeat;
+    background: url("../assets/img/catalogo/seta-baixo-verde.svg") no-repeat;
     transition: 0.3s;
 }
 
@@ -64,7 +64,7 @@
     width: 12px;
     height: 12px;
     margin-left: 3px;
-    background: url("../assets/img/seta-baixo.svg") no-repeat;
+    background: url("../assets/img/catalogo/seta-baixo.svg") no-repeat;
     transition: 0.3s;
 }
 
