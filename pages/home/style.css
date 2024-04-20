@@ -5,7 +5,6 @@ body {
   grid-template-columns: 1fr auto;
   min-height: 100vh;
   margin: 0 auto;
-  max-width: 1300px;
   position: relative;
 }
 
@@ -22,7 +21,6 @@ header a {
   color: #666872;
   text-decoration: none;
   margin-left: 40px;
-  
 }
 
 .logo {
@@ -89,19 +87,29 @@ header a {
   color: #FFFFFE;
   background: linear-gradient(#49944D, #ADCB56);
   text-align: center;
+  cursor: pointer;
   width: 70px;
   height: 40px;
   border-radius: 10px;
-  margin-left: 15px; 
+  border: 0;
   margin-top: 0;
 }
-
-.sidebar {
-  padding: 20px;
-  height: 550px;
-  display: inline-block;
+.subtitle-container img {
+  display: flex;
+  float: inline-end;
+  max-width: 100%;
+  height: auto;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .sidebar {
+  padding: 20px;
+  height: 550px;
+}
 
 .sidebar img {
   max-width: 100%;
@@ -109,9 +117,66 @@ header a {
   float: right;
 }
 
+.promo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+.promo h2 {
+  padding-top: 50px; /* Adiciona um espaçamento superior */
+  padding-bottom: 50px;
+}
+
+.promo h2 span.motos{
+  color: #000000;
+}
+.promo h2 span.promocao{
+  color: #0B7247;
+}
+
+.promo-images {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.promo-images div {
+  text-align: center; 
+  margin: 0 10px; 
+
+}
+
+.promo-images h3 {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.promo-images p {
+  color: #0B7247;
+  text-align: initial;
+  margin-left: 10px;
+}
+
+.promo-images button{
+  color: #0B7247;
+  text-align: initial;
+  float: left;
+  cursor: pointer;
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  border:#0B7247 solid 1px ;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
 footer {
   background-color: #ADCB56;
-  color: #D9D9D9;
+  color: #fff;
   padding: 20px;
   bottom: 0;
   width: 100%;
@@ -120,7 +185,7 @@ footer {
 }
 
 footer a {
-  color: #D9D9D9;
+  color: #ffff;
   text-decoration: none;
   margin: 0 10px;
 }
@@ -129,4 +194,11 @@ footer a {
   width: 30px;
   height: 30px;
   margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+footer .rodape{
+  border-top:#D9D9D9 solid 1px; 
+  color:ffffff;
+  padding-top: 10px;
 }
