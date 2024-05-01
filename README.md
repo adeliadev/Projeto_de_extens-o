@@ -10,7 +10,7 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] adicionar footer no catálogo
+- [x] adicionar footer no catálogo
 - [ ] finalizar home
 - [ ] começar a codar financiamento
 - [ ] planejar a responsividade do site no figma
