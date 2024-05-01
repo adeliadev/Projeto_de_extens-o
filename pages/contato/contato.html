@@ -3,79 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Green Motos | Contato</title>
     <link rel="stylesheet" href="../../styles/contato.css">
 </head>
 <body>
-    <div class="navigation">
-        <div class="links-left">
-            <a href="../home/index.html">Home</a>
-            <a href="#">Contato</a>
-        </div>
-        <div class="logo">
-            <img src="../../assets/images/contato/Rectangle 2.png" alt="Logo do Site">
-        </div>
-        <div class="links-right">
-            <a href="../catalogo/catalogo.html">Catálogo</a>
-            <a href="#">Financiamento</a>
-        </div>
-    </div>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar">
+                <li><a href="../home/index.html" class="item-navbar">Home</a></li>
+                <li><a href="../contato/contato.html" class="item-navbar ativo">Contato</a></li>
+                <li><a href="" class="item-navbar"><img src="../../assets/images/catalogo/logo-da-loja.png" alt="" width="250" class="logo"></a></li>
+                <li><a href="../catalogo/catalogo.html" class="item-navbar">Catálogo</a></li>
+                <li><a href="" class="item-navbar">Financiamento</a></li>
+            </ul>
+        </nav>
 
+        <div class="titulo-e-nav">
+            <p><a href="../home/index.html" class="link-nav">Home > </a><a href="../contato/contato.html" class="link-nav tit">Contato</a></p>
+            <h2 class="titulos-contato">Entre em contato conosco!</h2>
+        </div>
+    </header>
     
-    <div class="leftsidebar">
-        <h3>Telefones</h3>
-        <p>
-            <img src="../../assets/images/contato/Headset.png" alt="Ícone de Headset"> 83 2222 3333
-        </p>
-        <p>
-            <img src="../../assets/images/contato/Phone.png" alt="Ícone de Telefone"> 83 99999 8888
-        </p>
-        <p>Email: <a href="mailto:greenmotos@green.com.br">greenmotos@green.com.br</a></p>
-    </div>
-    <div class="container">
-        <h1>Email</h1>
-        <form id="emailForm">
-            <label for="email">Nome:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="name">Email:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="message">Assunto:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-    
-    <div class="rightsidebar">
-        <h2>Dúvidas</h2>
-        <button>Dúvidas Frequentes</button>
-    </div>
+    <main>
+        
 
-    <div class="backgroundrodape">
+        <div class="container-contato">
+            <div class="card-lateral numeros">
+                <h2 class="titulos-contato">Telefones</h2>
+                <p class="numero-celular">83 2222-3333</p>
+                <p class="numero-sac">0800 444 5656</p>
+            </div>
 
-    <!-- Imagens dos ícones do Twitter, Instagram e Facebook -->
-        <div class="social-icons">
-            <a href="#"><img src="../../assets/images/contato/Twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="../../assets/images/contato/Instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="../../assets/images/contato/Facebook.png" alt="Facebook"></a>
+            <div class="card-central email">
+                <h2 class="titulos-contato">Email</h2>
+                <form action="" class="formulario-email">
+                
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="exemplo@gmail.com" required>
+
+                    <label for="assunto">Assunto:</label>
+                    <textarea name="assunto" id="assunto" cols="30" rows="6"></textarea>
+
+                    <input type="button" value="Enviar" class="botao-email">
+                
+                </form>
+            </div>
+
+            <div class="card-lateral duvidas">
+                <h2 class="titulos-contato">Dúvidas?</h2>
+                <!-- colocar link da página de dúvidas -->
+                <button class="botao-duvidas"><a href="#">Dúvidas frequentes</a></button>
+            </div>
         </div>
+    </main>
 
-        <!-- Links adicionais -->
-        <div class="additional-links">
-            <a href="#">Trabalhe Conosco</a>
-            <a href="#">Unidades</a>
-            <a href="#">Contato</a>
-            <a href="#">Endereço</a>
-        </div>
-
-        <!-- Texto no rodapé -->
-        <div class="copyright">
-            &copy; GreenMotos-2024
-        </div>
-    </div>
+    <footer class="container-footer">
+        <ul>
+            <li class="redes-footer"><img src="../../assets/images/catalogo/Twitter.svg" alt=""></li>
+            <li class="redes-footer"><img src="../../assets/images/catalogo/Facebook.svg" alt=""></li>
+            <li class="redes-footer"><img src="../../assets/images/catalogo/Instagram.svg" alt=""></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="links-footer">Trabalhe conosco</a></li>
+            <li><a href="#" class="links-footer">Unidades</a></li>
+            <li><a href="#" class="links-footer">Contato</a></li>
+            <li><a href="#" class="links-footer">Endereço</a></li>
+        </ul>
+        <div class="linha-footer"></div>
+        <p class="copyright-footer">©Green Motos - 2024</p>
+    </footer>
     
     <script src="../../scripts/contato.js"></script>
 </body>
 </html>
+
+<!-- TODO -->
+<!-- alinhar svg com os numeros -->
+<!-- centralizar botao do form-->
+
+
+
 
 
 
