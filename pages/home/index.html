@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina inicial</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Pagina inicial</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <div class="links-left">
-        <a id="link" href="#">Home</a>
-        <a href="../contato/contato.html">Contato</a>
-    </div>
-    <div class="logo">
-        <img src="../../assets/images/home/logo.svg" alt="Logo do Site">
-    </div>
-    <div class="links-right">
-        <a href="../catalogo/catalogo.html">Catálogo</a>
-        <a href="#">Financiamento</a>
-    </div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" class="item-navbar">Home</a></li>
+        <li><a href="../contato/contato.html" class="item-navbar">Contato</a></li>
+        <li><a href="" class="item-navbar"><img src="../../assets/images/catalogo/logo-da-loja.png" alt="" width="250"
+              class="logo"></a></li>
+        <li><a href="../catalogo/catalogo.html" class="item-navbar">Catálogo</a></li>
+        <li><a href="../financiamento/financiamento.html" class="item-navbar">Financiamento</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="main-content">
-    <div class="titles">
-      <h1>Conheça nossas</h1>
-      <div class="subtitle-container">
-        <h2>MOTOS</h2>
-        <button> Aqui <img src="../../assets/images/home/arrow-right.svg" alt=""></button>
+  <main class="container-home">
+    <div class="home-conteudo">
+      <div class="home-frase">
+        <h1>Conheça nossas <br>
+          <span class="titulo-verde">MOTOS</span>
+        </h1>
+        <button class="botao-frase">
+          <a href="../catalogo/catalogo.html">Aqui</a>
+        </button>
+      </div>
+      <div class="home-imagem">
+        <img src="../../assets/images/home/motoprincipal.svg" alt="Imagem lateral">
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="sidebar">
-      <img src="../../assets/images/home/motoprincipal.png" alt="Imagem lateral">
-    </div>
-    <div class="promo">
-      <h2>
-        <span class="motos">Motos em</span>
-        <span class="promocao">promoção</span>
-      </h2>
-      <div class="promo-images">
-        <div>
-          <img src="../../assets/images/home/moto1.png" alt="Imagem 1">
-          <h3>Nome da moto - ano</h3>
-          <p>24.400,00</p>
-          <p>26.500,00</p> 
-          <button>Ver detalhes</button>
+    <div class="promocao-container">
+      <h2>Motos em promoção</h2>
+      <div class="home-promocao">
+        <div class="card-moto">
+          <img src="../../assets/images//catalogo/moto-azul.png" alt="" width="auto" height="160">
+          <h3 class="nome-moto-catalogo">Nome da moto</h3>
+          <p class="preco-catalogo">R$ 24.000,00</p>
+          <button class="botao-detalhes"><a href="">Ver detalhes</a></button>
         </div>
-        <div>
-          <img src="../../assets/images/home/moto2.png" alt="Imagem 2">
-            <h3>Nome da moto - ano</h3>
-            <p>12.200,00</p> 
-            <p>18.400,00</p>
-            <button>Ver detalhes</button>
+
+        <div class="card-moto">
+          <img src="../../assets/images//catalogo/moto-roxa.png" alt="" width="auto" height="160">
+          <h3 class="nome-moto-catalogo">Nome da moto</h3>
+          <p class="preco-catalogo">R$ 24.000,00</p>
+          <button class="botao-detalhes"><a href="">Ver detalhes</a></button>
         </div>
-        <div>
-          <img src="../../assets/images/home/moto3.png" alt="Imagem 3">
-          <h3>Nome da moto - ano</h3>
-          <p>18.680,00</p> 
-          <p>20.400,00</p> 
-          <button>Ver detalhes</button>
+
+        <div class="card-moto">
+          <img src="../../assets/images/catalogo/moto-cinza.png" alt="" width="auto" height="160">
+          <h3 class="nome-moto-catalogo">Nome da moto</h3>
+          <p class="preco-catalogo">R$ 24.000,00</p>
+          <button class="botao-detalhes"><a href="">Ver detalhes</a></button>
+        </div>
+
+        <div class="card-moto">
+          <img src="../../assets/images//catalogo/moto-azul.png" alt="" width="auto" height="160">
+          <h3 class="nome-moto-catalogo">Nome da moto</h3>
+          <p class="preco-catalogo">R$ 24.000,00</p>
+          <button class="botao-detalhes"><a href="">Ver detalhes</a></button>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
-  <footer>
-    <div class="social-icons">
-        <img src="../../assets/images/home/Twitter.svg" alt="Twitter">
-        <img src="../../assets/images/home/Instagram.svg" alt="Instagram">
-        <img src="../../assets/images/home/Facebook.svg" alt="Facebook">
-    </div>
-    <a href="#">Trabalhe Conosco</a>
-    <a href="#">Unidades</a>
-    <a href="#">Contato</a>
-    <a href="#">Endereço</a>
-    <div class="rodape">&copy; GreenMotos - 2024</div>
+  <footer class="container-footer">
+    <ul>
+      <li class="redes-footer"><img src="../../assets/images/catalogo/Twitter.svg" alt=""></li>
+      <li class="redes-footer"><img src="../../assets/images/catalogo/Facebook.svg" alt=""></li>
+      <li class="redes-footer"><img src="../../assets/images/catalogo/Instagram.svg" alt=""></li>
+    </ul>
+    <ul>
+      <li><a href="#" class="links-footer">Trabalhe conosco</a></li>
+      <li><a href="#" class="links-footer">Unidades</a></li>
+      <li><a href="#" class="links-footer">Contato</a></li>
+      <li><a href="#" class="links-footer">Endereço</a></li>
+    </ul>
+    <div class="linha-footer"></div>
+    <p class="copyright-footer">&copy; Green Motos - 2024</p>
   </footer>
-
 </body>
+
 </html>
+
+<!-- TO-DO -->
+
+<!-- centralizar h2 de promoção -->
+<!-- alinhar frase com o botão -->
+<!-- deixar "Home" da navbar verde -->
+<!-- trocar logo.png por logo.svg -->
