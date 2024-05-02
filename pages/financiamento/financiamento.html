@@ -4,9 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../styles/financiamento.css">
+    <link rel="stylesheet" href="/styles/financiamento.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul id="navbar">
+                <li class="link" id="navesquerdo"><a>Home</a></li>
+                <li class="link" id="navesquerdo"><a>Contato</a></li>
+                <li><a><img src="/assets/images/financiamento/logo-da-loja.png" alt="" width="250px" height=""></a></li>
+                <li class="link" id="navdireito"><a>Catálogo</a></li>
+                <li class="link" id="navdireito"><a>Financiamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1 id="titulo">Ficha de financiamento</h1>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label class="label" for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+            </div>
+            <div class="campo">
+                <label class="label" for="email">Email:</label>
+                <input type="email" name="email" id="emai" placeholder="exemplo@gmail.com">
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <div class="campo" id="linha">
+                <label class="label" for="cpf">CPF:</label>
+                <input type="text" name="CPF" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" id="cpf" placeholder="000.000.000-00">
+            </div>
+            <div class="campo" id="linha">
+                <label class="label" for="data">Data de nascimento:</label>
+                <input type="date" name="data" id="data" placeholder="dd/mm/aaaa">
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <div class="campo" id="linha">
+                <label class="label" for="modelo">Modelo da moto:</label>
+                <input type="text" name="modelo" id="modelo" placeholder="Jet 125 SS">
+            </div>
+            <div class="campo" id="linha">
+                <label class="label" for="ano">Ano</label>
+                <select name="Ano" id="">
+                    <option value="">2014</option>
+                    <option value="">2015</option>
+                    <option value="">2016</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                    <option value="">2021</option>
+                    <option value="">2022</option>
+                    <option value="">2023</option>
+                    <option value="" selected>2024</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <div class="campo" id="linha">
+                <label class="label" for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+            </div>
+            <div class="campo" id="linha">
+                <label class="label" for="renda">Renda mensal:</label>
+                <input type="text" name="renda">
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="cnh">Possui CNH?</label>
+            <label>
+                <input type="radio" name="cnh" value="sim">Sim
+            </label>
+            <label>
+                <input type="radio" name="cnh" value="não">Não
+            </label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <footer class="container-footer">
+        <ul>
+            <li class="redes-footer"><img src="../../assets/images/catalogo/Twitter.svg" alt=""></li>
+            <li class="redes-footer"><img src="../../assets/images/catalogo/Facebook.svg" alt=""></li>
+            <li class="redes-footer"><img src="../../assets/images/catalogo/Instagram.svg" alt=""></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="links-footer">Trabalhe conosco</a></li>
+            <li><a href="#" class="links-footer">Unidades</a></li>
+            <li><a href="#" class="links-footer">Contato</a></li>
+            <li><a href="#" class="links-footer">Endereço</a></li>
+        </ul>
+        <div class="linha-footer"></div>
+        <p class="copyright-footer">©Green Motos - 2024</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f8f8f8;
+    margin-top: 2%;
+    justify-content: center;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+#navesquerdo{
+    right:170px
+}
+#navdireito{
+    left: 170px;
+}
+.link{
+    margin-right: 60px;
+    margin-left: 40px;
+    position: relative;
+    padding: 0;
+    color: #666872;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+#titulo{
+    font-family: sans-serif;
+    color: black;
+    margin-left: 480px;
+}
+form{
+    margin-top: 40px;
+    margin-left: 400px;
+}
+fieldset{
+    border: 0;
+    
+}
+input:focus, select:focus{
+    background-color: rgb(221, 219, 219);
+    outline: none;
+}
+input[type="text"], input[type="email"], input[type="date"], input[type="tel"], select{
+    border: 2px solid #0B7247;
+    border-radius: 12px;
+    border-color: #0B7247;
+    
+}
+
+input[name="nome"], input[name="email"]{
+    width: 500px;
+    height: 50px;
+}
+input[name="CPF"]{
+    width: 260px;
+    height: 50px;
+}
+input[name="data"]{
+    width: 230px;
+    height: 50px;
+}
+input[name="modelo"]{
+    width: 290px;
+    height: 50px;
+    
+}
+input[name="telefone"]{
+    width: 145px;
+    height: 50px;
+}
+input[name="renda"]{
+    width: 165px;
+    height: 50px;
+}
+select[name="Ano"]{
+    width: 200px;
+    height: 50px;
+}
+.label{
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+.campo{
+    margin-bottom: 40px;
+    margin-right: 2px;
+    position: relative;
+}
+button{
+    background-color: #0B7247;
+    border-radius: 12px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border: #0B7247;
+}
+#linha{
+    display: inline-block;
+    margin-right: 2px;
+}
+.container-footer{
+    width: 100%;
+    text-align: center;
+    background-color: #ADCB56;
+    padding: 20px 0;
+}
+
+.container-footer ul{
+    background-color: #ADCB56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.redes-footer{
+    padding: 10px 20px;
+}
+
+.links-footer{
+    text-decoration: none;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+.linha-footer {
+    height: 1px;
+    background-color: #fff; /* Cor da linha */
+    margin: 20px 0; /* Espaçamento da linha */
+}
+
+.copyright-footer{
+    color: #ffffff;
+}
