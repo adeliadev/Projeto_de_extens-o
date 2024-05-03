@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas Frequentes</title>
+    <link rel="stylesheet" href="../../styles/duvidas.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="navbar">
+                <li><a href="" class="item-navbar">Home</a></li>
+                <li><a href="../contato/contato.html" class="item-navbar">Contato</a></li>
+                <li><a href="" class="item-navbar"><img src="../../assets/images/catalogo/logo-da-loja.png" alt=""
+                            width="250" class="logo"></a></li>
+                <li><a href="#" class="item-navbar">Catálogo</a></li>
+                <li><a href="" class="item-navbar">Financiamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+
+        <div class="pergunta-duvidas">
+            <div class="pergunta" onclick="toggleResposta('resposta1')">O financiamento tem quantos porcentos de juros?
+            </div>
+            <div id="resposta1" class="resposta">O juros bancários vai depender do score. quanro mais alto menor o juros
+                do banco.</div>
+        </div>
+        <div class="pergunta-duvidas">
+            <div class="pergunta" onclick="toggleResposta('resposta2')">Qual a quantidade de parcelas do financiamento?
+            </div>
+            <div id="resposta2" class="resposta">O financiamento divide em 12x 24x 36x e 48x.</div>
+        </div>
+        <div class="pergunta-duvidas">
+            <div class="pergunta" onclick="toggleResposta('resposta3')">Dando um valor X de entrada no financiamento,
+                quanto fica as parcelas?</div>
+            <div id="resposta3" class="resposta">Para Colocar a entrada só depois do financiamento ser aprovado.</div>
+        </div>
+        <div class="pergunta-duvidas">
+            <div class="pergunta" onclick="toggleResposta('resposta4')">Posso colocar Outro CPF para financiar?</div>
+            <div id="resposta4" class="resposta">Aceitamos pagamento à vista (pix ou em espécie), no cartão em até 18x
+                com o juros da maquineta, e no financiamento bancário em até 48x.</div>
+        </div>
+        <div>
+            <div class="pergunta" onclick="toggleResposta('resposta5')">Quais os Bindes da loja?</div>
+            <div id="resposta5" class="resposta">A empresa fica responsável pelo capacete, tanque cheio e a
+                transferencia de placa.</div>
+        </div>
+
+        <footer class="container-footer">
+            <ul>
+                <li class="redes-footer"><img src="../../assets/images/catalogo/Twitter.svg" alt=""></li>
+                <li class="redes-footer"><img src="../../assets/images/catalogo/Facebook.svg" alt=""></li>
+                <li class="redes-footer"><img src="../../assets/images/catalogo/Instagram.svg" alt=""></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="links-footer">Trabalhe conosco</a></li>
+                <li><a href="#" class="links-footer">Unidades</a></li>
+                <li><a href="#" class="links-footer">Contato</a></li>
+                <li><a href="#" class="links-footer">Endereço</a></li>
+            </ul>
+            <div class="linha-footer"></div>
+            <p class="copyright-footer">©Green Motos - 2024</p>
+        </footer>
+
+
+        <script>
+            function toggleResposta(idResposta) {
+                var resposta = document.getElementById(idResposta);
+                resposta.classList.toggle('resposta-ativa');
+            }
+        </script>
+</body>
+
+</html>
