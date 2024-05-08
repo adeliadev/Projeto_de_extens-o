@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background-color: #f8f8f8;
+}
+
+.item-navbar {
+  text-decoration: none;
+  padding: 0 50px;
+  color: #666872;
+}
+
+.logo {
+  margin: 20px 120px;
+}
+
+/* MAIN */
+
+.container-detalhes {
+  height: 800px;
+  background-color: #f8f8f8;
+}
+
+.container-detalhes h1 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.info-moto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+.link-nav {
+  margin-left: 40px;
+  color: darkgrey;
+}
+
+.link-nav a {
+  text-decoration: none;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+
+.foto-moto img {
+  width: 400px;
+  height: 400px;
+  font-size: 16px;
+}
+
+.detalhes-info {
+  margin-left: 60px;
+}
+
+.detalhes-info h2{
+  font-weight: 400;
+}
+
+.precos{
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.preco-desconto {
+  color: #0B7247;
+  font-size: 30px;
+}
+
+.preco-original {
+  font-size: 15px;
+  color: #aaaaaa;
+  text-decoration: line-through;
+}
+
+.informacoes li {
+  font-size: 16px;
+  list-style-type: none;
+}
+
+.informacoes {
+  padding: 5px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-width: 1px;
+  width: 450px;
+}
+
+.botao-contato {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 20px;
+  padding: 10px 30px;
+  border: 2px solid #0B7247;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.botao-contato a {
+  text-decoration: none;
+  color: #0B7247;
+}
+
+
+
+#contato {
+  margin: 10px 20px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.container-footer {
+  width: 100%;
+  text-align: center;
+  background-color: #ADCB56;
+  padding: 20px 0;
+}
+
+.container-footer ul {
+  background-color: #ADCB56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.redes-footer {
+  padding: 10px 20px;
+}
+
+.links-footer {
+  text-decoration: none;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+.linha-footer {
+  height: 1px;
+  background-color: #fff;
+  /* Cor da linha */
+  margin: 20px 0;
+  /* Espaçamento da linha */
+}
+
+.copyright-footer {
+  color: #ffffff;
+}

@@ -45,9 +45,10 @@
 
 .home-conteudo{
   display: grid;
-  justify-items: center;
-  padding-top: 50px;
-  grid-template-columns: 600px 700px 1fr;
+  align-content: center;
+  justify-content: center;
+  height: 700px;
+  grid-template-columns: 400px 800px;
   background: #f8f8f8;
 }
 
