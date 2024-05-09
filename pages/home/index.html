@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +15,9 @@
   <header>
     <nav>
       <ul class="navbar">
-        <li><a href="#" class="item-navbar">Home</a></li>
+        <li><a href="#" class="item-navbar ativo">Home</a></li>
         <li><a href="../contato/contato.html" class="item-navbar">Contato</a></li>
-        <li><a href="" class="item-navbar"><img src="../../assets/images/catalogo/logo-da-loja.png" alt="" width="250"
+        <li><a href="" class="item-navbar"><img src="../../assets/images/home/logo.svg" alt="" width="250"
               class="logo"></a></li>
         <li><a href="../catalogo/catalogo.html" class="item-navbar">Catálogo</a></li>
         <li><a href="../financiamento/financiamento.html" class="item-navbar">Financiamento</a></li>
@@ -30,43 +31,67 @@
         <h1>Conheça nossas <br>
           <span class="titulo-verde">MOTOS</span>
         </h1>
-        <button class="botao-frase">
-          <a href="../catalogo/catalogo.html">Aqui</a>
-        </button>
+        <p class="home-texto">"Descubra a liberdade sobre duas rodas. Explore nossa seleção premium de motocicletas,
+          projetadas para elevar sua jornada. Encontre a moto dos seus sonhos hoje e comece sua aventura."</p>
+
+        <div class="botoes-home">
+          <button class="botao-frase">
+            <a href="../catalogo/catalogo.html">Aqui</a>
+            <img src="../../assets/images/home/arrow-right.svg" alt="">
+          </button>
+          <button class="botao-contato">
+            <a href="../contato/contato.html">Fale conosco</a>
+          </button>
+        </div>
       </div>
       <div class="home-imagem">
         <img src="../../assets/images/home/motoprincipal.png" alt="" width="900" height="500">
       </div>
     </div>
 
+    <section class="frase-container">
+      <div class="frase-conteudo">
+        <img src="../../assets/images/home/moto-bg.jpg" alt="" class="frase-bg">
+        <p class="frase">"Em cada acelerada, um
+          horizontes e vivemos a verdadeira liberdade. Nas curvas da estrada, a adrenalina nos impulsiona, enquanto
+          nossas motos, mais que veículos, são o símbolo da paixão e da autenticidade. Viva a experiência que só as
+          motos podem proporcionar!""
+          <br><br>
+          <span>- ChatGPT</span>
+        </p>
+      </div>
+      </div>
+    </section>
+
     <div class="promocao-container">
       <h2>Motos em promoção</h2>
       <div class="home-promocao">
         <div class="card-moto">
-          <img src="../../assets/images//catalogo/moto-azul.png" alt="" width="auto" height="160">
-          <h3 class="nome-moto-catalogo">Nome da moto</h3>
-          <p class="preco-catalogo">R$ 24.000,00</p>
+          <a href="../../pages/catalogo/catalogo.html"><img src="../../assets/images/catalogo/moto-azul.png" alt=""
+              class="img-card" width="auto" height="160"></a>
+          <h3 class="titulo-card">Nome da moto</h3>
+          <p class="preco-catalogo">R$ 20.000,00</p>
           <button class="botao-detalhes"><a href="">Ver detalhes</a></button>
         </div>
 
         <div class="card-moto">
-          <img src="../../assets/images//catalogo/moto-roxa.png" alt="" width="auto" height="160">
-          <h3 class="nome-moto-catalogo">Nome da moto</h3>
-          <p class="preco-catalogo">R$ 24.000,00</p>
+          <img src="../../assets/images//catalogo/moto-roxa.png" alt="" class="img-card" width="auto" height="160">
+          <h3 class="titulo-card">Nome da moto</h3>
+          <p class="preco-catalogo">R$ 22.000,00</p>
           <button class="botao-detalhes"><a href="">Ver detalhes</a></button>
         </div>
 
         <div class="card-moto">
-          <img src="../../assets/images/catalogo/moto-cinza.png" alt="" width="auto" height="160">
-          <h3 class="nome-moto-catalogo">Nome da moto</h3>
-          <p class="preco-catalogo">R$ 24.000,00</p>
+          <img src="../../assets/images/catalogo/moto-cinza.png" alt="" class="img-card" width="auto" height="160">
+          <h3 class="titulo-card">Nome da moto</h3>
+          <p class="preco-catalogo">R$ 27.000,00</p>
           <button class="botao-detalhes"><a href="">Ver detalhes</a></button>
         </div>
 
         <div class="card-moto">
-          <img src="../../assets/images//catalogo/moto-azul.png" alt="" width="auto" height="160">
-          <h3 class="nome-moto-catalogo">Nome da moto</h3>
-          <p class="preco-catalogo">R$ 24.000,00</p>
+          <img src="../../assets/images//catalogo/moto-azul.png" alt="" class="img-card" width="auto" height="160">
+          <h3 class="titulo-card">Nome da moto</h3>
+          <p class="preco-catalogo">R$ 29.000,00</p>
           <button class="botao-detalhes"><a href="">Ver detalhes</a></button>
         </div>
       </div>
@@ -75,14 +100,14 @@
 
   <footer class="container-footer">
     <ul>
-      <li class="redes-footer"><img src="../../assets/images/catalogo/Twitter.svg" alt=""></li>
-      <li class="redes-footer"><img src="../../assets/images/catalogo/Facebook.svg" alt=""></li>
-      <li class="redes-footer"><img src="../../assets/images/catalogo/Instagram.svg" alt=""></li>
+      <li class="redes-footer"><a href="#"><img src="../../assets/images/catalogo/Twitter.svg" alt=""></a></li>
+      <li class="redes-footer"><a href="#"><img src="../../assets/images/catalogo/Facebook.svg" alt=""></a></li>
+      <li class="redes-footer"><a href="#"><img src="../../assets/images/catalogo/Instagram.svg" alt=""></a></li>
     </ul>
     <ul>
       <li><a href="#" class="links-footer">Trabalhe conosco</a></li>
       <li><a href="#" class="links-footer">Unidades</a></li>
-      <li><a href="#" class="links-footer">Contato</a></li>
+      <li><a href="../contato/contato.html" class="links-footer">Contato</a></li>
       <li><a href="#" class="links-footer">Endereço</a></li>
     </ul>
     <div class="linha-footer"></div>
