@@ -145,6 +145,129 @@ header{
 }
 
 
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    height: 700px;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #f8f8f8;
+}
+
+.item-navbar{
+    text-decoration: none;
+    padding: 0 50px;
+    color: #666872;
+}
+
+.logo{
+    margin: 20px 120px;
+}
+
+
+.pergunta-duvidas {
+    border-radius: 10px;
+}
+
+
+.pergunta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border: 1px solid #292929;
+    padding: 15px 20px;
+    cursor: pointer;
+    text-align: left;
+    margin: 15px;
+}
+
+.pergunta::after {
+    content: url(../assets/images/contato/Vector.svg);
+}
+
+.resposta {
+    display: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.resposta-ativa {
+    display: block;
+    margin-top: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-right: 10px;
+}
+
+.Home-Duvidas li a,
+.Contato-Duvidas li a,
+.Contato-Duvidas li.seta {
+    color: #4e4e4e;
+}
+
+.container-footer{
+    width: 100%;
+    text-align: center;
+    background-color: #ADCB56;
+    padding: 20px 0;
+}
+
+.container-footer ul{
+    background-color: #ADCB56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.redes-footer{
+    padding: 10px 20px;
+}
+
+.links-footer{
+    text-decoration: none;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+.linha-footer {
+    height: 1px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.copyright-footer{
+    color: #ffffff;
+}
+
+
+
+
 /* FOOTER */
 
 .container-footer{
@@ -181,6 +304,3 @@ header{
 .copyright-footer{
     color: #ffffff;
 } 
-
-
-

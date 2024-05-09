@@ -1,4 +1,4 @@
-document.getElementById('emailForm').addEventListener('submit', function(event) {
+document.getElementById('emailForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the form from submitting
 
     // Get form values
@@ -16,3 +16,10 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
     // Clear the form fields
     document.getElementById('emailForm').reset();
 });
+
+
+function toggleResposta(idResposta) {
+    var resposta = document.getElementById(idResposta);
+    resposta.classList.toggle('resposta-ativa');
+}
+

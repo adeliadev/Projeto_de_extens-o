@@ -1,11 +1,15 @@
-*{
+/* ESTILOS GERAIS */
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
+/* NAVBAR */
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,17 +17,17 @@
     background-color: #f8f8f8;
 }
 
-.item-navbar{
+.item-navbar {
     text-decoration: none;
     padding: 0 50px;
     color: #666872;
 }
 
-.logo{
+.logo {
     margin: 20px 120px;
 }
 
-.botoes-catalogo{
+.botoes-catalogo {
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
@@ -39,18 +43,18 @@
     gap: 3px;
     border-radius: 20px;
     cursor: pointer;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .ativo {
     background-color: #0B7247;
 }
 
-.ordenar{
+.ordenar {
     color: #0B7247;
 }
 
-.botao-ordenar button::before{
+.botao-ordenar button::before {
     content: "";
     width: 12px;
     height: 12px;
@@ -60,7 +64,7 @@
 }
 
 
-.botao-categoria button::after{
+.botao-categoria button::after {
     content: "";
     width: 12px;
     height: 12px;
@@ -71,35 +75,47 @@
 
 /* CARDS DAS MOTOS */
 
-.container-catalogo{
+.container-catalogo {
     padding: 80px 0 100px 0;
     height: 1200px;
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: #f8f8f8;
 }
 
-.card-moto{
+.card-moto {
     width: 180px;
 }
 
-.ano-moto{
+.card-moto img {
+    transition: transform 0.3s ease;
+}
+
+.titulo-card {
+    color: #292D32;
+}
+
+.img-card:hover {
+    transform: scale(1.2);
+}
+
+.ano-moto {
     font-size: 13px;
 }
 
-.preco-catalogo{
+.preco-desconto {
     color: #0B7247;
 }
 
-.preco-anterior{
+.preco-original {
     color: #666872;
     font-size: 12px;
     text-decoration: line-through;
 }
 
-.botao-detalhes{
+.botao-detalhes {
     display: block;
     width: 190px;
     margin: 0 auto;
@@ -110,21 +126,28 @@
     cursor: pointer;
 }
 
-.botao-detalhes a{
+.botao-detalhes a {
     text-decoration: none;
     color: #0B7247;
 }
 
+.botao-detalhes:hover,
+.botao-detalhes:hover a {
+  background-color: #0B7247;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 /* FOOTER */
 
-.container-footer{
+.container-footer {
     width: 100%;
     text-align: center;
     background-color: #ADCB56;
     padding: 20px 0;
 }
 
-.container-footer ul{
+.container-footer ul {
     background-color: #ADCB56;
     display: flex;
     align-items: center;
@@ -132,11 +155,12 @@
     list-style: none;
 }
 
-.redes-footer{
+.redes-footer {
     padding: 10px 20px;
+    cursor: pointer;
 }
 
-.links-footer{
+.links-footer {
     text-decoration: none;
     padding: 0 20px;
     color: #ffffff;
@@ -144,10 +168,12 @@
 
 .linha-footer {
     height: 1px;
-    background-color: #fff; /* Cor da linha */
-    margin: 20px 0; /* Espaçamento da linha */
+    background-color: #fff;
+    /* Cor da linha */
+    margin: 20px 0;
+    /* Espaçamento da linha */
 }
 
-.copyright-footer{
+.copyright-footer {
     color: #ffffff;
 }
