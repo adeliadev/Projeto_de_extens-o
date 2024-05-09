@@ -6,41 +6,41 @@ body{
     background-color: #f8f8f8;
     margin-top: 2%;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
 }
-#navbar{
+.navbar{
     display: flex;
-    justify-content: center;
     align-items: center;
-    display: flex;
+    justify-content: center;
     list-style: none;
+    background-color: #f8f8f8;
 }
-#navesquerdo{
-    right:170px
-}
-#navdireito{
-    left: 170px;
-}
-.link{
-    margin-right: 60px;
-    margin-left: 40px;
-    position: relative;
-    padding: 0;
+
+.item-navbar{
+    text-decoration: none;
+    padding: 0 50px;
     color: #666872;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+}
+
+.logo{
+    margin: 20px 120px;
 }
 #titulo{
     font-family: sans-serif;
-    color: black;
-    margin-left: 480px;
+    color: #292D32;
+    margin-left: 490px;
 }
 form{
     margin-top: 40px;
-    margin-left: 400px;
+    margin-left: 410px;
 }
 fieldset{
     border: 0;
     
+}
+input, select{
+    padding-left: 10px;
+    font-family: "Poppins", sans-serif;
 }
 input:focus, select:focus{
     background-color: rgb(221, 219, 219);
@@ -55,36 +55,37 @@ input[type="text"], input[type="email"], input[type="date"], input[type="tel"], 
 
 input[name="nome"], input[name="email"]{
     width: 500px;
-    height: 50px;
+    height: 45px;
+    
 }
 input[name="CPF"]{
     width: 260px;
-    height: 50px;
+    height: 45px;
 }
 input[name="data"]{
-    width: 230px;
-    height: 50px;
+    width: 220px;
+    height: 45px;
 }
 input[name="modelo"]{
     width: 290px;
-    height: 50px;
+    height: 45px;
     
 }
 input[name="telefone"]{
     width: 145px;
-    height: 50px;
+    height: 44px;
 }
 input[name="renda"]{
     width: 165px;
-    height: 50px;
+    height: 44px;
 }
 select[name="Ano"]{
     width: 200px;
-    height: 50px;
+    height: 49px;
 }
 .label{
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: 10px;
 }
 .campo{
@@ -105,6 +106,43 @@ button{
 #linha{
     display: inline-block;
     margin-right: 2px;
+}
+.radio-group {
+    display: flex;
+    flex-direction: row; /* Para manter os grupos de rádio na mesma linha */
+    gap: 20px; /* Espaçamento entre grupos de rádio */
+    margin-bottom: 20px;
+}
+
+/* Cada rótulo (label) tem uma direção vertical para o input e o texto */
+.radio-label {
+    display: flex;
+    flex-direction: column; /* Alinha input e texto verticalmente */
+    align-items: center; /* Centraliza no eixo horizontal */
+    gap: 5px; /* Espaçamento entre input e texto */
+    margin-top: 7px;
+}
+
+/* Para uma melhor experiência visual, você pode definir tamanho fixo para os inputs */
+input[type="radio"] {
+    transform: scale(1.2); /* Aumenta um pouco o tamanho do rádio para maior visibilidade */
+    appearance: none; /* Remove a aparência padrão do navegador */
+    background-color: #f0f0f0; /* Cor de fundo do botão de rádio */
+    border: 1.5px solid #0B7247 ; /* Cor da borda */
+    border-radius: 50%; /* Forma redonda */
+    width: 15px; /* Largura do rádio */
+    height: 15px; /* Altura do rádio */
+    position: relative; /* Para usar pseudo-elementos */
+}
+input[type="radio"]:checked::before {
+    content: ''; /* Cria o pseudo-elemento */
+    position: absolute; /* Para centralizar dentro do input de rádio */
+    top: 2px; /* Ajusta posição vertical */
+    left: 2px; /* Ajusta posição horizontal */
+    width: 9px; /* Largura do círculo interno */
+    height: 9px; /* Altura do círculo interno */
+    border-radius: 50%; /* Forma redonda */
+    background-color: #0B7247; /* Cor do círculo interno */
 }
 .container-footer{
     width: 100%;
