@@ -32,9 +32,10 @@
   background-color: #f8f8f8;
 }
 
-.container-detalhes h1 {
-  text-align: center;
+.titulo-detalhes{
+  color: #0B7247;
   padding-top: 40px;
+  text-align: center;
 }
 
 .info-moto {
