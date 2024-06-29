@@ -10,11 +10,11 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] adicionar footer no catálogo
-- [ ] finalizar home
-- [ ] começar a codar financiamento
+- ✅ adicionar footer no catálogo
+- ✅ finalizar home
+- ✅ começar a codar financiamento
 - [ ] planejar a responsividade do site no figma
-- [ ] adicionar JavaScript no site
+- [ ] adicionar JavaScript nas páginas
 
 ## Grupo:
 - Thamyres Adélia
